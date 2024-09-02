@@ -1,4 +1,53 @@
 baseURL: https://example.org/
 languageCode: en-us
-title: Sean Chai's Portfolio
-theme: ["PaperMod"]
+title: Sean Chai
+theme: ["PaperMod", "hugo-shortcode-gallery"]
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: posts
+      name: Posts
+      url: /posts
+      weight: 20
+    - identifier: projects
+      name: Projects
+      url: /projects
+      weight: 30
+    - identifier: search
+      name: Search
+      url: /search
+      weight: 40
+    - identifier: about-me
+      name: About Me
+      url: /about
+      weight: 50
+
+params:
+#  author:
+#    name: Sean Chai
+#    email: hcardry@gmail.com
+
+  # theme
+  showToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  hideMeta: false
+
+  # for enchanced SEO
+  env: production
+
+  # Home Page
+  # profileMode:
+  #   enabled: true
+  #   title: "Sean Chai"
+  #   subtitle: aka Cai Xuan. A street photography enthusiast from Malaysia. What I do is stealing moments from the public domain and forever capture in digital data or film.
+  #   imageUrl: "home/home-cover.jpg"
+  #   imageWidth: 220
+  #   imageHeight: 220
+
+
